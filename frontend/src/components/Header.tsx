@@ -11,6 +11,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/solid";
 import DarkModeButton from "./DarkModeButton";
+import GitHubButtonLink from "./GitHubButtonLink";
 import nightwind from "nightwind/helper";
 import { showToast } from "./Toast";
 
@@ -167,6 +168,7 @@ export default function Header(): ReactElement {
         </Link>
       </div>
       <div className="text-gray-600 flex flex-row items-center justify-between gap-x-2">
+        <GitHubButtonLink />
         <DarkModeButton />
         <HeaderItem>{logInButton}</HeaderItem>
       </div>
